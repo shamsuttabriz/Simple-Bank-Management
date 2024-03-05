@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank-Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-800 text-white">
+    <header>
+        <h1 class="text-5xl text-center mt-12">Let's gets <span class="font-semibold text-orange-500">Some Money</span>!!!</h1>
+    </header>
+
+    <main>
+        <section class="w-5/6 p-5 mt-12 mx-auto">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-[#FFBE98] p-5 bg-opacity-60 rounded">
+                    <h3 class="text-3xl">Deposit</h3>
+                    <h2 class="text-2xl font-medium">$<span id="total-deposit-amount">00</span></h2>
+                </div>
+                <div class="bg-[#74E291] p-5 bg-opacity-60 rounded">
+                    <h3 class="text-3xl">Withdraw</h3>
+                    <h2 class="text-2xl font-medium">$<span id="total-withdraw-amount">00</span></h2>
+                </div>
+                <div class="bg-[#37B5B6] p-5 bg-opacity-60 rounded">
+                    <h3 class="text-3xl">Balance</h3>
+                    <h2 class="text-2xl font-medium">$<span id="main-balance">00</span></h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-5/6 p-5 mt-8 mx-auto">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-slate-600 bg-opacity-60 p-5 bg-opacity-60 rounded">
+                    <h3 class="text-3xl">Please Deposit</h3>
+                    <input id="user-deposit" class="block px-5 py-2 my-5 w-2/3 rounded border-2 border-slate-800 outline-none text-black" type="email" placeholder="$ Amount you want to Deposit">
+                    <button id="btn-deposit" type="submit" class="px-5 py-2 bg-slate-800 hover:bg-transparent border-2 border-slate-800 rounded duration-200">Deposit</button>
+                </div>
+                <div class="bg-slate-600 bg-opacity-60 p-5 bg-opacity-60 rounded">
+                    <h3 class="text-3xl">Please Withdraw</h3>
+                    <input id="user-withdraw" class="block px-5 py-2 my-5 w-2/3 rounded border-2 border-slate-800 outline-none text-black" type="email" placeholder="$ Amount you want to Withdraw">
+                    <button id="btn-withdraw" type="submit" class="px-5 py-2 bg-slate-800 hover:bg-transparent border-2 border-slate-800 rounded duration-200">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-5/6 p-5 mt-4 mx-auto">
+        <span id="home-page" class=" cursor-pointer">Back to Home page</span>
+    </footer>
+
+    <script src="js/inside.js"></script>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+
+</html>
